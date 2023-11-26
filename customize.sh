@@ -163,15 +163,6 @@ if [ -d /data/adb/modules/PixelifyPhotos/system/product/etc/sysconfig ]; then
         fi
     done
 fi
-if [ -d /data/adb/modules/PixelifyPhotos/system/etc/sysconfig ]; then
-    for i in /data/adb/modules/PixelifyPhotos/system/etc/sysconfig/*; do
-        file=$i
-        file=${file/\/data\/adb\/modules\/PixelifyPhotos\/system\/etc\/sysconfig\//}
-        if [ ! -f $MODPATH/system/etc/sysconfig/$file ]; then
-            cp -f /data/adb/modules/PixelifyPhotos/system/etc/sysconfig/$file $MODPATH/system/etc/sysconfig/$file
-        fi
-    done
-fi
 
 #Audio Eraser, Magic Editor
 db_edit com.google.android.apps.photos boolVal 1 "45389969" "45429858" "45377931" "45430953" "45417067" "45413465"
