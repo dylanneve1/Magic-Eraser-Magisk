@@ -185,6 +185,4 @@ db_edit_bin com.google.android.apps.photos "45422509" "$ME3"
 db_edit_bin com.google.android.apps.photos "45416982" "$BESTTAKE"
 db_edit_bin com.google.android.apps.photos "3015" "$GPHOTOS"
 
-pm install $MODPATH/gphotos/*.apk
-
 touch $MODPATH/firstboot
